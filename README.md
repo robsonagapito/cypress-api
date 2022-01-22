@@ -9,8 +9,6 @@ Projeto de exemplo para realização de testes de integração (API) utilizando 
 - [VSCode](https://code.visualstudio.com/ "VSCode")
 - [Cypress](https://www.npmjs.com/package/cypress "Cypress")
 
-## Estrutura de pastas
-
 #####
 
 ## Tutorial, Instalação e execução
