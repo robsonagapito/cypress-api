@@ -1,0 +1,18 @@
+{
+  "baseUrl": "http://agapito-server.herokuapp.com",
+  "video": false,
+  "defaultCommandTimeout": 10000,
+  "requestTimeout": 50000,
+    "env": {
+      "tokenApi": "bla bla",
+      "addBearer": false,
+      "bearerApi": "Bearer bla bla"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "mochawesome-report/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }
+}

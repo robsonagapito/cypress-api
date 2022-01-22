@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "ea747ea5-02fd-4b8b-baac-84cf82d587d0",
+		"name": "DIO-GFT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post - Users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"login\": \"bugluna\",\r\n\t\"full_name\": \"Bug Luna Arlequina Pequena da Silva Agapito Correa\",\r\n\t\"email\": \"bugluna@gmail.com\",\r\n\t\"age\": \"12\"\r\n}"
+				},
+				"url": {
+					"raw": "http://agapito-server.herokuapp.com/users",
+					"protocol": "http",
+					"host": [
+						"agapito-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get - All Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://agapito-server.herokuapp.com/users",
+					"protocol": "http",
+					"host": [
+						"agapito-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get - One User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://agapito-server.herokuapp.com/users/7375",
+					"protocol": "http",
+					"host": [
+						"agapito-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"7375"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put - User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\": {\r\n\t\"login\": \"leandroleis\",\r\n\t\"full_name\": \"Leandro \",\r\n\t\"email\": \"stellaagapito@gmail.com\",\r\n\t\"age\": \"88\"\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "http://agapito-server.herokuapp.com/users/7070",
+					"protocol": "http",
+					"host": [
+						"agapito-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"7070"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch - User",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\": {\r\n\t\"age\": \"18\"\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "http://agapito-server.herokuapp.com/users/2569",
+					"protocol": "http",
+					"host": [
+						"agapito-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"2569"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete - One User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://agapito-server.herokuapp.com/users/7381",
+					"protocol": "http",
+					"host": [
+						"agapito-server",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"7381"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

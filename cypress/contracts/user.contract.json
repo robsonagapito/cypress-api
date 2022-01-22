@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "login": {
+        "type": "string"
+      },
+      "full_name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "age": {
+        "type": "integer"
+      },
+      "created_at": {
+        "type": "string"
+      },
+      "updated_at": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "login",
+      "full_name",
+      "email",
+      "age",
+      "created_at",
+      "updated_at"
+    ]
+  }
