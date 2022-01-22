@@ -8,6 +8,7 @@ Projeto de exemplo para realização de testes de integração (API) utilizando 
 ## Ferramentas utilizadas:
 - [VSCode](https://code.visualstudio.com/ "VSCode")
 - [Cypress](https://www.npmjs.com/package/cypress "Cypress")
+- [Json-To-Schema](https://www.liquid-technologies.com/online-json-to-schema-converter "Json-To-Schema")
 
 #####
 
